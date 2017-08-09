@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://deltaCounter.gd" type="Script" id=1]
+
+[node name="Panel" type="Panel"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 4.0
+margin/top = 0.0
+margin/right = 175.0
+margin/bottom = 99.0
+
+[node name="Label" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 36.0
+margin/top = 21.0
+margin/right = 130.0
+margin/bottom = 56.0
+text = "Compteur Delta"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Label 2" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 37.0
+margin/top = 41.0
+margin/right = 132.0
+margin/bottom = 87.0
+text = "0"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+script/script = ExtResource( 1 )
+
+
